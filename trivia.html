@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HW 5 Trivia Game">
+        <meta name="author" content="Christine Munoz">
+
+        <title>Trivia Game</title>
+        
+        <!--Add Style sheets images and links and fontand Script: jquery/Ajax-->
+
+        <link rel="icon" type="image/png" href="assets/images/angel.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    </head>
+    <body>
+        <audio controls>
+            <source src="assets/audio/gamemusic01.mp3" type="audio/mp3">
+
+        </audio>
+
+        <!-- Added background url photo-->
+        <body style = "background: url(https://ak.picdn.net/shutterstock/videos/22442137/thumb/1.jpg); background-size: 100% 100%;"></body>
+
+
+        <div class="container">
+            <h1>" Music Trivia "</h1>
+            
+            <!-- Directions -->
+            <div class="page">
+                <h2>Directions:</h2>
+                
+                <p>There are "10" trivia questions. You will be timed.</p>
+                <p>See how many you get correct. IF YOUR WORTHY!</p>
+                <p>*Game Audio (press controls upper left of page)</p>
+
+                <div class="page_next" id="button_start">Start</div>
+            </div>
+            
+            <!-- Quiz Game-->
+            <div class="page" id="quizForm">
+                <div id="question"></div>
+                <div class="container_fixed">
+                    <div id="timer"></div>
+                </div>
+                <div id="button_submit">Submit</div>
+            </div>
+            
+            <!-- Result/Answers -->
+            <div class="page">
+                <h2>Answers:</h2>
+                <p>You got <span id="numCorrectAnswers"></span> out of <span id="numQuestions"></span> questions correct!</p>
+
+                <div class="page_next" id="button_restart">Restart</div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/musictrivia.js"></script>
+       
+    
+        <!--  Footer-->
+        <center>
+        <footer class="sticky-footer">
+         <p class=" footer-style">
+         <br> <br> <br><br>
+         <strong>© Copyright 2020 - Christine Munoz - Trivia Game</strong> <br>
+         <a href="https://github.com/christineZ5" target="_blank">GitHub Repo</a>
+         |
+         <a href="https://github.com/christineZ5" target="_blank">Portfolio</a>
+         </p>
+       
+         </footer> 
+       
+       </center>
+
+
+    </body>
+</html>
